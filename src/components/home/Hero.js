@@ -1,10 +1,16 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 export default function Hero() {
     return (
         <>
             <section className="hero-section">
+                <div className="logo-wrapper">
+                    <Link path='/'>
+                    <img src={process.env.PUBLIC_URL + '/assets/img/anto-logo-black.png'} alt="btcl" className="img-fluid" />
+                    </Link>
+                </div>
                 <div className="container-wrapper">
                     <Container>
                         <div className="heading">

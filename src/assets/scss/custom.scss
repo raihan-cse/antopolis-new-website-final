@@ -79,6 +79,14 @@ ol, ul, dl {
     height: 100vh;
     background-image: url(../images/web-bg-s.png);
     background-position: right bottom;
+    position: relative;
+    .logo-wrapper {
+        position: absolute;
+        top: 15px;
+        left: 40px;
+        width: 65px;
+        height: 65px;
+    }
     .container-wrapper {
         display: flex;
         height: 100%;

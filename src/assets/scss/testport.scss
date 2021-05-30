@@ -1,0 +1,44 @@
+@import "colors";
+@import "buttons";
+
+
+.port-sec {
+    position: relative;
+    .ptab {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 75px;
+        background-color: red;
+        ul {
+            color: black;
+            li {
+                transform: rotate(90deg);
+                transform-origin: 50% bottom;
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+    .content {
+        height: 100vh;
+    }
+}
+
+.csclass {
+    position: relative;
+}
+
+.drotate {
+    // transform: translate(5px, 100px) rotate(90deg);
+    transform: rotate(90deg);
+    // transform-origin: 50% bottom;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

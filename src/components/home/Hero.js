@@ -8,14 +8,14 @@ export default function Hero() {
                 <div className="container-wrapper">
                     <Container>
                         <div className="heading">
-                            <h1 class="first">We are Antopolis</h1>
-                            <h1 class="second">We empower changemakers.</h1>
-                            {/* <h1 class="third">This website will be live soon!</h1> */}
-                            <p>We’d love to work with you in the meantime. <br /> Just drop us a line below!</p>
+                            <h1 className="first">We are Antopolis</h1>
+                            <h1 className="second">We empower changemakers.</h1>
+                            {/* <h1 className="third">This website will be live soon!</h1> */}
+                            <p>We’d love to work with you.  <br /> Just drop us a line below!</p>
                         </div>
                         <Row>
                             <Col sm={6} md={12} lg={12}>
-                                <form id="form" novalidate >
+                                <form id="form" noValidate >
                                     <div className="form-inline">
                                         <div className="form-group">
                                             <input type="text" className="form-control datalist" list="services" name="services" placeholder="Type or select a service" required />
@@ -35,11 +35,11 @@ export default function Hero() {
                                                 <option value="Internet of Things" />
                                             </datalist>
                                         </div>
-                                        <div class="form-group">
+                                        <div className="form-group">
                                             <input type="email" className="form-control" name="email" id="subscribe-email" placeholder="Email Address"
                                                 required />
                                         </div>
-                                        <button type="submit" className="submit-btn">GET A FREE QUOTE</button>
+                                        <button type="submit" className="submit-btn"><span>GET A FREE QUOTE</span></button>
                                     </div>
                                 </form>
                             </Col>

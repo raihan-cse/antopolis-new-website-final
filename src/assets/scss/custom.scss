@@ -80,13 +80,6 @@ ol, ul, dl {
     background-image: url(../images/web-bg-s.png);
     background-position: right bottom;
     position: relative;
-    .logo-wrapper {
-        position: absolute;
-        top: 15px;
-        left: 40px;
-        width: 65px;
-        height: 65px;
-    }
     .container-wrapper {
         display: flex;
         height: 100%;
@@ -114,7 +107,11 @@ ol, ul, dl {
                 color: $black-light;
             }
         }
-        #form input[type="text"]:active, #form input[type="text"]:focus, #form input[type="text"]:hover, #form input[type="email"]:active, #form input[type="email"]:focus, #form input[type="email"]:hover {
+        #form input[type="text"]:active, #form input[type="text"]:focus, #form input[type="email"]:active, #form input[type="email"]:focus {
+            box-shadow: inset 0 0 0 3px red;
+            transition: all .5s ease-in-out;
+        }
+        #form input[type="text"]:hover,  #form input[type="email"]:hover {
             box-shadow: inset 0 0 0 3px #111;
             transition: all .5s ease-in-out;
         }
@@ -193,63 +190,16 @@ ol, ul, dl {
     }
 }
 
-// .submit-btn {
-//     position: relative;
-//     color: #111;
-//     font-size: 16px;
-//     font-weight: 600;
-//     border: 3px solid #111;
-//     border-radius: 3px;
-//     padding: 8px 12px;
-//     transition: all .3s;
-//     background-color: transparent;
-//     display: inline-block;
-//     text-align: center;
-// }
-
-// .submit-btn::before, .submit-btn::after {
-//     content: '';
-//     position: absolute;
-//     background-color: #111;
-//     // z-index: -1;
-// }
-// .submit-btn::after {
-//     width: 0;
-//     height: 0;
-//     top: 50%;
-//     left: 50%;
-//     transition: all 0.3s ease-in-out;
-// }
-// .submit-btn:hover::after {
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     left: 0;
-// }
-// .submit-btn:hover {
-//     color: red;
-// }
-// .submit-btn span {
-//     position: relative;
-//     z-index: 1;
-//     color: white;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // digital experience section start
+.digital-experience-section .col-md-4:nth-child(2) > .de-content-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.digital-experience-section .col-md-4:nth-child(3) > .de-content-wrapper {
+    margin-left: auto;
+}
 .section-title-wrapper {
     display: flex;
     justify-content: space-between;

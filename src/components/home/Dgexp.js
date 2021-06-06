@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-// import Business from '../../assets/images/Business.svg'
-// import Content from '../../assets/images/Content.svg'
-// import Tech from '../../assets/images/Tech.svg'
 import AngleRight from '../../assets/images/angle-right.svg'
 
 export default function DigitalExperience() {
+    // const [dx, setDx] = useState({})
+
+    // useEffect(() => {
+    //     fetch('https://raw.githubusercontent.com/raihan-cse/antopolis-website-images/master/db.json/digitalExperience')
+    //         .then(res => res.json())
+    //         .then(data => setDx(data))
+    // }, [])
+    
+
     const dxdata = [
         {
             id: '1',
@@ -64,39 +70,6 @@ export default function DigitalExperience() {
                                 </div>
                             </Col>
                         )}
-                        {/* <Col md={4}>
-                            <div className="de-content-wrapper">
-                                <div className="img-box">
-                                    <img className="img-fluid"  src={Business} alt="Business Services" />
-                                </div>
-                                <div className="info-box">
-                                    <h3 className="title">Business Services</h3>
-                                    <p className="text">Webdesign (UI & UX) is our historical expertise. We’re constantly seeking to strike the right balance.</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className="de-content-wrapper mx-auto">
-                                <div className="img-box">
-                                    <img className="img-fluid"  src={Tech} alt="Techonological Solutions" />
-                                </div>
-                                <div className="info-box">
-                                    <h3 className="title">Techonological Solutions</h3>
-                                    <p className="text">Webdesign (UI & UX) is our historical expertise. We’re constantly seeking to strike the right balance.</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={4}>
-                            <div className="de-content-wrapper ml-auto">
-                                <div className="img-box">
-                                    <img className="img-fluid" src={Content} alt="Content Developement" />
-                                </div>
-                                <div className="info-box">
-                                    <h3 className="title">Content Developement</h3>
-                                    <p className="text">Webdesign (UI & UX) is our historical expertise. We’re constantly seeking to strike the right balance.</p>
-                                </div>
-                            </div>
-                        </Col> */}
                     </Row>
                 </Container>
             </section>

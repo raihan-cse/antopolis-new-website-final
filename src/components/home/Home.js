@@ -5,7 +5,6 @@ import DigitalExperience from './DigitalExperience'
 import GreatTogether from './GreatTogether'
 import Hero from './Hero'
 import Portfolio from './Portfolio'
-// import Testport from './Testport'
 
 export default function Home() {
     return (
@@ -13,7 +12,6 @@ export default function Home() {
             <Hero />
             <DigitalExperience />
             <Portfolio />
-            {/* <Testport /> */}
             <Clients />
             <AnimatedCount />
             <GreatTogether />

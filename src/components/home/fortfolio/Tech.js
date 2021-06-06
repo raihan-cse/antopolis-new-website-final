@@ -48,71 +48,65 @@ export default function Content() {
         centerMode: true,
         swipeToSlide: false,
         focusOnSelect: true,
+        autoplaySpeed: 3000,
+        speed: 2000,
     };
 
+    
     const slidesData = [
         {
             id: 1,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'repellendus id ullam',
-            label: 'Dolorem officiis temporibus.',
-            imgAlt: 'first'
+            imgAlt: 'One',
+            csLink: '#demo'
         },
         {
             id: 2,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'excepturi consequatur est',
-            label: 'Officia non provident dolor esse et neque.',
-            imgAlt: 'second'
+            imgAlt: 'two',
+            csLink: '#demo'
         },
         {
             id: 3,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'eius doloribus blanditiis',
-            label: 'Ut recusandae vel vitae molestiae id soluta.',
-            imgAlt: 'third'
+            imgAlt: 'Three',
+            csLink: '#demo'
         },
         {
             id: 4,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'nihil voluptates delectus',
-            label: 'Qui vel consequatur recusandae illo repellendus.',
-            imgAlt: 'fouth'
+            imgAlt: 'Four',
+            csLink: '#demo'
         },
         {
             id: 5,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'nemo dolorem necessitatibus',
-            label: 'Placeat odit velit itaque voluptatem.',
-            imgAlt: 'fifth'
+            imgAlt: 'Five',
+            csLink: '#demo'
         },
         {
             id: 6,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'dolorem quibusdam quasi',
-            label: 'Adipisci officiis repudiandae.',
-            imgAlt: 'sixth'
+            imgAlt: 'Six',
+            csLink: '#demo'
         },
         {
             id: 7,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'nemo dolorem necessitatibus',
-            label: 'Placeat odit velit itaque voluptatem.',
-            imgAlt: 'fifth'
+            imgAlt: 'Seven',
+            csLink: '#demo'
         },
         {
             id: 8,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'dolorem quibusdam quasi',
-            label: 'Adipisci officiis repudiandae.',
-            imgAlt: 'sixth'
+            imgAlt: 'Eight',
+            csLink: '#demo'
         },
         {
             id: 9,
             imgUrl: '/assets/img/media/media-white.png',
-            title: 'nemo dolorem necessitatibus',
-            label: 'Placeat odit velit itaque voluptatem.',
-            imgAlt: 'fifth'
+            imgAlt: 'Nine',
+            csLink: '#demo'
         },
     ];
 

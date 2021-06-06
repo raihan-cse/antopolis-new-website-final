@@ -32,6 +32,82 @@ export default function Clients() {
         autoplaySpeed: 3000,
         speed: 2000,
     }
+
+    const slideData = [
+        {
+            id: '1',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/Toyota.png',
+            imgAlt: 'Toyota'
+        },
+        {
+            id: '2',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/Unilever.png',
+            imgAlt: 'Unilever'
+        },
+        {
+            id: '3',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/Aarong.png',
+            imgAlt: 'Aarong'
+        },
+        {
+            id: '4',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/ACI.png',
+            imgAlt: 'ACI'
+        },
+        {
+            id: '5',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/Airtel.png',
+            imgAlt: 'Airtel'
+        },
+        {
+            id: '6',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/Arla.png',
+            imgAlt: 'Arla'
+        },
+        {
+            id: '7',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/BK.png',
+            imgAlt: 'BK'
+        },
+        {
+            id: '8',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/BRAC.png',
+            imgAlt: 'BRAC'
+        },
+        {
+            id: '9',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/Nissan.png',
+            imgAlt: 'Nissan'
+        },
+        {
+            id: '10',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/PRAN.png',
+            imgAlt: 'PRAN'
+        },
+        {
+            id: '11',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/Toyota.png',
+            imgAlt: 'Toyota'
+        },
+        {
+            id: '12',
+            csLink: '#dmeo',
+            imgUrl: '/assets/img/client/Unilever.png',
+            imgAlt: 'Unilever'
+        },
+    ]
+
     return (
         <>
             <section className="home-clients-section spb-100">
@@ -55,183 +131,46 @@ export default function Clients() {
                     </Row>
                 </Container>
                 <Container fluid className="px-0">
-                    <Slide {...ssOne}>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Toyota.png'} alt="btcl" className="ts" />
-                                </a>
+                <Slide {...ssOne}>
+                        {slideData.map((sitem) =>
+                            <div className="item" key={sitem.id}>
+                                <div className="clients-logo">
+                                    <a href={sitem.csLink} className="text-decoration-none text-reset">
+                                        <img src={sitem.imgUrl} alt={sitem.imgAlt} className="ts" />
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Unilever.png'} alt="toyota" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Aarong.png'} alt="uniliver" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/ACI.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Airtel.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Arla.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/BK.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/BRAC.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Nissan.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/PRAN.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Toyota.png'} alt="btcl" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Unilever.png'} alt="toyota" className="ts" />
-                                </a>
-                            </div>
-                        </div>
+                        )}
                     </Slide>
-
                     {/* slide two start */}
                     <Slide {...ssTwo} className="slide-rtl">
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Toyota.png'} alt="btcl" className="ts" />
-                                </a>
+                        {slideData.map((sitem) =>
+                            <div className="item" key={sitem.id}>
+                                <div className="clients-logo">
+                                    <a href={sitem.csLink} className="text-decoration-none text-reset">
+                                        <img src={sitem.imgUrl} alt={sitem.imgAlt} className="ts" />
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Unilever.png'} alt="toyota" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Aarong.png'} alt="uniliver" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/ACI.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Airtel.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Arla.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/BK.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/BRAC.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Nissan.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/PRAN.png'} alt="desco" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Toyota.png'} alt="btcl" className="ts" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="clients-logo">
-                                <a href="#demo" className="text-decoration-none text-reset">
-                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Unilever.png'} alt="toyota" className="ts" />
-                                </a>
-                            </div>
-                        </div>
+                        )}
                     </Slide>
                     
                     {/* slide three start */}
                     <Slide {...ssThree}>
+                        {slideData.map((sitem) =>
+                            <div className="item" key={sitem.id}>
+                                <div className="clients-logo">
+                                    <a href={sitem.csLink} className="text-decoration-none text-reset">
+                                        <img src={sitem.imgUrl} alt={sitem.imgAlt} className="ts" />
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+                    </Slide>
+
+
+                    
+                    {/* <Slide {...ssOne}>
                         <div className="item">
                             <div className="clients-logo">
                                 <a href="#demo" className="text-decoration-none text-reset">
@@ -316,7 +255,183 @@ export default function Clients() {
                                 </a>
                             </div>
                         </div>
-                    </Slide>
+                    </Slide> */}
+
+                    {/* slide two start */}
+                    {/* <Slide {...ssTwo} className="slide-rtl">
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Toyota.png'} alt="btcl" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Unilever.png'} alt="toyota" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Aarong.png'} alt="uniliver" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/ACI.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Airtel.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Arla.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/BK.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/BRAC.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Nissan.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/PRAN.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Toyota.png'} alt="btcl" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Unilever.png'} alt="toyota" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                    </Slide> */}
+                    
+                    {/* slide three start */}
+                    {/* <Slide {...ssThree}>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Toyota.png'} alt="btcl" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Unilever.png'} alt="toyota" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Aarong.png'} alt="uniliver" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/ACI.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Airtel.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Arla.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/BK.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/BRAC.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Nissan.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/PRAN.png'} alt="desco" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Toyota.png'} alt="btcl" className="ts" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="clients-logo">
+                                <a href="#demo" className="text-decoration-none text-reset">
+                                    <img src={process.env.PUBLIC_URL + '/assets/img/client/Unilever.png'} alt="toyota" className="ts" />
+                                </a>
+                            </div>
+                        </div> 
+                    </Slide> */}
                 </Container>
             </section>
         </>
